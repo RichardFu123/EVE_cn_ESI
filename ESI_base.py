@@ -1,6 +1,3 @@
-import requests
-
-
 base_address = "https://esi.evepc.163.com/"
 latest_address = base_address + "latest/"
 dev_address = base_address + "dev/"
@@ -15,15 +12,9 @@ def character_info(character_id):
     return f"characters/{character_id}/?datasource=serenity"
 
 
-def request(address):
-    try:
-        r = requests.get(address)
-        if r.status_code != 200:
-            print("request error")
-            raise Exception
-        result = eval(r.text)
-        r.close()
-        return result
+def corporation_info(corporation_id):
+    return f"corporations/{corporation_id}/?datasource=serenity"
 
-    except Exception:
-        print("can not get character id")
+
+def alliance_info(alliance_id):
+    return f"alliances/{alliance_id}/?datasource=serenity"
