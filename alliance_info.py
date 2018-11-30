@@ -1,3 +1,11 @@
+#!/usr/bin/env python
+# encoding: utf-8
+"""
+@author: Shawn
+@contact: 121857051@qq.com
+@file: alliance_info.py
+@time: 11/30/2018 3:21 PM
+"""
 import request_factory
 
 

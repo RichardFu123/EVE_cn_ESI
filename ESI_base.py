@@ -1,3 +1,11 @@
+#!/usr/bin/env python
+# encoding: utf-8
+"""
+@author: Shawn
+@contact: 121857051@qq.com
+@file: ESI_base.py
+@time: 11/30/2018 3:21 PM
+"""
 base_address = "https://esi.evepc.163.com/"
 latest_address = base_address + "latest/"
 dev_address = base_address + "dev/"
