@@ -26,3 +26,15 @@ def corporation_info(corporation_id):
 
 def alliance_info(alliance_id):
     return f"alliances/{alliance_id}/?datasource=serenity"
+
+
+def sovereignty_campaigns():
+    return "sovereignty/campaigns/?datasource=serenity"
+
+
+def sovereignty_map():
+    return "sovereignty/map/?datasource=serenity"
+
+
+def sovereignty_structures():
+    return "sovereignty/structures/?datasource=serenity"

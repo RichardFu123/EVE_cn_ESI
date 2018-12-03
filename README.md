@@ -6,6 +6,8 @@
 
 ----
 
+>12/3/2018 add sovereignty
+
 >11/30/2018 add annotation
 
 >11/30/2018 take the function about requests into a factory and info about corp and alliance

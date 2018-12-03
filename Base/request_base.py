@@ -23,13 +23,14 @@ class RequestBase:
             return result
         except Exception:
             print(f"can not get {self.tag}.")
+            print(Exception.args)
 
 
 def request(address):
-    r = requests.get(address)
+    r = requests.get(address, timeout=60)
     if r.status_code != 200:
         print("request error")
-        raise Exception
+        raise Exception("request error")
     result = eval(r.text)
     r.close()
     return result
