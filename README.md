@@ -2,9 +2,13 @@
 > Shawn
 
 * 自用
-
+* 第一项功能: 显示目前所有主权战
+    * show_campaigns.py
 
 ----
+
+>12/3/2018 add an useful function: show_campaigns.py
+
 >12/3/2018 add Universe: system, constellation, region
 
 >12/3/2018 add Convert: utc2local

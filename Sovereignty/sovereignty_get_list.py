@@ -27,10 +27,10 @@ def structures_list():
 
 @unique
 class CampaignsEventType(Enum):
-    tcu_defense = "TCU攻防"
-    ihub_defense = "IHUB攻防"
-    station_defense = "空间站攻防"
-    station_freeport = "空间站自由港"
+    tcu_defense = "TCU"
+    ihub_defense = "IHUB"
+    station_defense = "空间站"
+    station_freeport = "自由港"
 
 
 if __name__ == "__main__":
