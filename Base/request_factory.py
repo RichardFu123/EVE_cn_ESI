@@ -34,6 +34,24 @@ def request_factory(request_type, key_str=None):
     elif request_type == "sovereignty_structures":
         address = main_address + ESI_base.sovereignty_structures()
         request = request_base.RequestBase(address, request_type)
+    elif request_type == "universe_systems":
+        address = main_address + ESI_base.universe_systems()
+        request = request_base.RequestBase(address, request_type)
+    elif request_type == "universe_system":
+        address = main_address + ESI_base.universe_system(key_str)
+        request = request_base.RequestBase(address, request_type)
+    elif request_type == "universe_constellations":
+        address = main_address + ESI_base.universe_constellations()
+        request = request_base.RequestBase(address, request_type)
+    elif request_type == "universe_constellation":
+        address = main_address + ESI_base.universe_constellation(key_str)
+        request = request_base.RequestBase(address, request_type)
+    elif request_type == "universe_regions":
+        address = main_address + ESI_base.universe_regions()
+        request = request_base.RequestBase(address, request_type)
+    elif request_type == "universe_region":
+        address = main_address + ESI_base.universe_region(key_str)
+        request = request_base.RequestBase(address, request_type)
     else:
         print("request_factory: wrong type")
     return request

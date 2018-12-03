@@ -6,6 +6,7 @@
 @file: sovereignty_get_list.py
 @time: 12/3/2018 11:21 AM
 """
+from enum import Enum, unique
 from Base import request_factory
 
 
@@ -24,8 +25,18 @@ def structures_list():
     return r.get()
 
 
+@unique
+class CampaignsEventType(Enum):
+    tcu_defense = "TCU攻防"
+    ihub_defense = "IHUB攻防"
+    station_defense = "空间站攻防"
+    station_freeport = "空间站自由港"
+
+
 if __name__ == "__main__":
     from Convert import utc2local
+    for i in CampaignsEventType:
+        print(i.value)
     for campaign in campaigns_list():
         print(campaign)
         print(utc2local.utc_str_2_local_str(campaign['start_time']))

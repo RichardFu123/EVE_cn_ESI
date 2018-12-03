@@ -38,3 +38,27 @@ def sovereignty_map():
 
 def sovereignty_structures():
     return "sovereignty/structures/?datasource=serenity"
+
+
+def universe_systems():
+    return "universe/systems/?datasource=serenity"
+
+
+def universe_system(system_id):
+    return f"universe/systems/{system_id}/?datasource=serenity&language=zh"
+
+
+def universe_constellations():
+    return "universe/constellations/?datasource=serenity"
+
+
+def universe_constellation(constellation_id):
+    return f"universe/constellations/{constellation_id}/?datasource=serenity&language=zh"
+
+
+def universe_regions():
+    return "universe/regions/?datasource=serenity"
+
+
+def universe_region(region_id):
+    return f"universe/regions/{region_id}/?datasource=serenity&language=zh"
