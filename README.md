@@ -2,6 +2,9 @@
 > Shawn
 
 * 自用
+* 依赖:
+    * requests
+    * python 3.7
 * 第一项功能: 显示目前所有主权战
     * show_campaigns.py
 
