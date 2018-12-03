@@ -25,7 +25,9 @@ def structures_list():
 
 
 if __name__ == "__main__":
+    from Convert import utc2local
     for campaign in campaigns_list():
         print(campaign)
+        print(utc2local.utc_str_2_local_str(campaign['start_time']))
     print(len(map_list()))
     print(len(structures_list()))
