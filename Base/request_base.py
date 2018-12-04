@@ -31,6 +31,6 @@ def request(address):
     if r.status_code != 200:
         print("request error")
         raise Exception("request error")
-    result = eval(r.text)
+    result = eval(r.text)  # 可能导致安全问题
     r.close()
     return result
