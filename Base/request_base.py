@@ -7,6 +7,7 @@
 @time: 11/30/2018 3:21 PM
 """
 import requests
+import json
 
 
 class RequestBase:
@@ -31,6 +32,6 @@ def request(address):
     if r.status_code != 200:
         print("request error")
         raise Exception("request error")
-    result = eval(r.text)  # 可能导致安全问题
+    result = json.loads(r.text)
     r.close()
     return result
