@@ -20,7 +20,7 @@ def try_print(st, end='\n'):
     global content
     try:
         print(st, end=end)
-        content += st+end
+        content += str(st)+end
     except:
         print()
         content += '\n'
